@@ -157,7 +157,6 @@ export default Ember.Component.extend({
       }
       if (cell) {
         style = this._cellLayout.formatItemStyle(itemIndex, this._clientWidth, this._clientHeight);
-        set(cell, 'index', itemIndex);
         set(cell, 'style', style);
         set(cell, 'hidden', false);
         set(cell, 'key', itemKey);
